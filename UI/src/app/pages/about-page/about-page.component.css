@@ -1,0 +1,191 @@
+.main-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .video-section {
+    width: 100vw;
+    height: 75vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .promo-video {
+    width: 100vw; 
+    height: 75vh; 
+    object-fit: cover; 
+  }
+  
+  .info-section {
+    display: grid;
+    gap: 20px;
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .info-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    max-width: 90%; 
+    margin: 0 auto;
+  }
+
+  .info-item:first-child .info-photo {
+    height: 500px; 
+    width: 40%;
+  }
+  
+  .info-item:nth-child(odd) {
+    flex-direction: row; 
+  }
+  
+  .info-item:nth-child(even) {
+    flex-direction: row-reverse; 
+  }
+  
+  .info-photo {
+    width: 50%; 
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .info-text {
+    font-size: 18px;
+    color: #595858;
+    max-width: 40%; 
+    font-family: 'Cambria';
+  }
+  
+  .view-cars-button-container {
+    margin: 20px 0;
+  }
+  
+  .promo-section {
+    background-color: #030303;
+    color: white;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    position: relative;
+    padding-bottom: 60px; 
+  }
+  
+  .promo-content {
+    display: flex;
+    align-items: center;
+  }
+  
+  .promo-photo {
+    width: 200px;
+    margin-right: 20px;
+  }
+  
+  .promo-text h2 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  .promo-text p {
+    margin: 10px 0;
+    font-size: 18px;
+  }
+  
+  .about-button {
+    position: relative; 
+    padding-left: 40px; 
+    padding-right: 10px; 
+    padding-top: 10px; 
+    padding-bottom: 10px; 
+    background-color: #e0e0e0; 
+    border: 1px solid #ccc; 
+    transition: background-color 0.3s ease; 
+    display: flex; 
+    align-items: center; 
+}
+
+.about-button:hover {
+    background-color: #d0d0d0; 
+    padding-left: 10px; 
+    padding-right: 30px; 
+}
+
+.about-button::before {
+    content: ""; 
+    position: absolute; 
+    left: 10px; 
+    top: 50%; 
+    transform: translateY(-50%); 
+    width: 20px; 
+    height: 20px; 
+    background-image: url('/assets/icon.png'); 
+    background-size: contain; 
+    background-repeat: no-repeat; 
+    transition: transform 0.3s ease, opacity 0.3s ease; 
+}
+
+.about-button::after {
+    content: "→"; 
+    position: absolute; 
+    right: 20px; 
+    opacity: 0; 
+    transition: transform 0.3s ease, opacity 0.3s ease; 
+}
+
+.about-button:hover::before {
+    transform: translate(-8px, -50%); 
+    opacity: 0; 
+}
+
+.about-button:hover::after {
+    transform: translateX(15px); 
+    opacity: 1; 
+}
+  
+  .scroll-to-top {
+    position: absolute;
+    bottom: 10px; 
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+  }
+  
+.scroll-to-top:hover {
+    background-color: #555;
+  }
+  
+
+.subscribe-button {
+    background-color: #4382c6; 
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    z-index: 10;
+} 
+
+.subscribe-button:hover {
+  background-color: #32385b;
+  color: white;
+}
+  
