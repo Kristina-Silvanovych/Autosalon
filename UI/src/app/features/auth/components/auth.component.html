@@ -1,0 +1,14 @@
+<div class="relative">
+  <button (click)="toggleMenu()" class="auth-button flex items-center">
+    <img src="assets/user-icon.png" alt="Auth Icon" class="circle-image" />
+    <p class="auth-text">Log In</p>
+  </button>
+
+  <div *ngIf="menuOpen" class="absolute right-0 mt-2 w-48 bg-white border rounded shadow-lg">
+    <mat-toolbar class="menu-toolbar">
+      <button (click)="closeMenu()" class="close-button">×</button>
+      <a [routerLink]="['/register']" routerLinkActive="active" class="menu-item register" (click)="closeMenu()">Register</a>
+      <a [routerLink]="['/signin']" routerLinkActive="active" class="menu-item signin" (click)="closeMenu()">Sign In</a>
+    </mat-toolbar>
+  </div>
+</div>
