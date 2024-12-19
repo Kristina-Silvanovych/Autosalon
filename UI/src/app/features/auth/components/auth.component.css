@@ -1,0 +1,117 @@
+  .circle-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  
+  .relative {
+    position: relative;
+  }
+  
+  .absolute {
+    position: absolute;
+  }
+
+  .auth-button {
+    display: flex;
+    align-items: center; 
+    background-color: transparent; 
+    border: none; 
+    color: white; 
+    cursor: pointer;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .auth-button img {
+    margin-right: 8px; 
+  }
+  
+  .auth-text {
+    color: rgb(145, 143, 143);
+    font-family: 'Cambria';
+    margin: 0 15px;
+    font-size: 18px;
+    margin: 0; 
+  }
+  
+  .auth-button:hover .auth-text {
+    color: #ccc; 
+  }
+  
+  .menu-toolbar {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 150px;
+    align-items: center; 
+    justify-content: center;
+    border-radius: 5px;
+    z-index: 1000;
+  }
+  
+  .menu-item {
+    display: block;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: rgb(60, 59, 59);
+    font-family: 'Cambria';
+    text-align: center;
+    margin: 0 15px;
+    font-size: 18px;
+    background-color: rgb(245, 245, 245);
+    width: 80%; 
+    box-sizing: border-box; 
+    border-radius: 8px;
+  }
+  
+
+  .menu-item.register {
+    background-color: #6088c5; 
+    padding-top: 10px;
+    margin-top: 20px;
+  }
+  
+
+  .menu-item.signin {
+    background-color: #b4b6bc; 
+  }
+
+  .menu-item.register:hover {
+    background-color: #72a4ef; 
+    padding-top: 10px;
+    opacity: 0.9; 
+  }
+  
+
+  .menu-item.signin:hover {
+    background-color: #caccd4; 
+    opacity: 0.9; 
+  }
+  
+  .menu-item + .menu-item {
+    margin-top: 10px; 
+  }
+
+  .close-button {
+    position: absolute;
+    top: 10px; 
+    margin-bottom: 20px;
+    right: 10px;
+    background-color: transparent;
+    color: #333;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.close-button:hover {
+    color: red;
+}
