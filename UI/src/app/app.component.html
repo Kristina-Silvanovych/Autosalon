@@ -1,0 +1,39 @@
+<div class="flex flex-col h-screen md:flex">
+  <header class="text-white text-center">
+    <mat-toolbar class="theme-color">
+      <div class="navbar-container">
+        <div class="navbar-links">
+          <a mat-menu-item [routerLink]="['/about']">About us</a>
+          <a mat-menu-item [routerLink]="['/cars']">Our Cars</a>
+          <a mat-menu-item [routerLink]="['/contacts']">Contacts</a>
+        </div>
+        <div class="navbar-logo">
+          <img src="{{ 'assets/logo.webp' }}" class="circle-image" alt="Company Logo" />
+        </div>
+        <div class="navbar-actions">
+          <search-page></search-page> 
+
+          <div *ngIf="authService.isLoggedIn(); else loggedOut">
+            <button mat-button [matMenuTriggerFor]="menu">
+              {{ authService.isAdmin() ? 'Admin: ' + authService.getUser()?.email : 'Hello, ' + authService.getUser()?.name + '!' }} </button>
+            <mat-menu #menu="matMenu">
+              <button mat-menu-item (click)="goToProfile()">My profile</button>
+              <button mat-menu-item (click)="logout()">Log out</button>
+            </mat-menu>
+          </div>
+
+          <ng-template #loggedOut>
+            <auth-button class="auth" id="menuButton"></auth-button>
+          </ng-template>
+
+        </div>
+      </div>
+    </mat-toolbar>
+  </header>   
+  
+  <main class="flex-1 overflow-y-auto bg-sky-200">       
+    <router-outlet></router-outlet>
+  </main>
+
+  <footer class="text-center text-white"></footer>
+</div>

@@ -1,0 +1,67 @@
+.theme-color {
+    background-color: rgb(71, 69, 73);
+}
+
+mat-toolbar {
+    display: flex; 
+    justify-content: center; /* Центрує вміст в середині */
+    align-items: center;
+}
+  
+.navbar-container {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; /* Розподіляє елементи по краях */
+    width: 100%; 
+    max-width: 1400px; 
+}
+
+.navbar-links, .navbar-links a {
+    color: rgb(145, 143, 143);
+    font-family: 'Cambria';
+    margin: 0 15px;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-evenly; 
+    text-decoration: none;
+}
+
+.navbar-logo {
+    display: flex;
+    justify-content: center; 
+    flex: 1; 
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); 
+}
+
+.navbar-actions {
+    display: flex;
+    align-items: center; 
+    gap: 10px; 
+}
+
+.circle-image {
+    border-radius: 50%;
+    object-fit: cover; 
+    width: 70px;
+    height: 60px;
+}
+
+.circle-image-search {
+    border-radius: 50%;
+    object-fit: cover; 
+    width: 30px;
+    height: 30px;
+}
+
+.search {
+    margin-right: 10px;
+}
+
+.auth {
+    display: flex;
+    align-items: center;
+    padding-right: 0;
+}
+
