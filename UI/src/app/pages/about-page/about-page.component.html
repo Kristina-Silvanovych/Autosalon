@@ -1,0 +1,42 @@
+<div class="main-page">
+    <section class="video-section">
+      <video autoplay muted loop class="promo-video">
+        <source src="assets/video.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </section>
+  
+    <section class="info-section">
+      <div class="info-item">
+        <img src="assets/about1.jpeg" alt="Photo 1" class="info-photo" />
+        <p class="info-text">
+            Discover our unique service that will open the modern world of beautiful, comfortable and safe cars equipped with new technologies. Learn more about our salon, familiarize yourself with the assortment and choose the perfect car!</p>
+      </div>
+      <div class="info-item">
+        <img src="assets/about2.cms" alt="Photo 2" class="info-photo" />
+        <p class="info-text">Explore the latest news on events, fashion and sports with us. Discover the brand's latest innovations and immerse yourself in our universe of exclusive content!</p>
+      </div>
+      <div class="info-item">
+        <img src="assets/about3.png" alt="Photo 3" class="info-photo" />
+        <p class="info-text">Quality and design under the sign of the star. Made with passion and attention to detail. Take the worry out of your worries with our service agreements for the technical service, maintenance and repair of your vehicle. Easily purchase additional Digital Extras and enjoy your car in a new way. </p>
+      </div>
+    </section>
+  
+    <div class="view-cars-button-container">
+        <button mat-raised-button color="primary" (click)="goToCars()" class="about-button">Show all vehicles</button>
+      </div>
+      
+      <section class="promo-section">
+        <div class="promo-content">
+          <img src="assets/about4.avif" alt="Banner Photo" class="promo-photo" />
+          <div class="promo-text">
+            <h2>Discover the cars of your dreams!</h2>
+            <p>Explore our collection and find what inspires you. Are you ready for new adventures with us?</p>
+            <button mat-button color="accent" (click)="Register()" class="subscribe-button">Subscribe</button>
+          </div>
+        </div>
+      
+        <button class="scroll-to-top" (click)="scrollToTop()">
+          ⬆
+        </button>
+      </section>
